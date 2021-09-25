@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg  viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="020-flag" fill-rule="nonzero">
+            <rect id="Rectangle" fill="#FFD250" x="0" y="0.235" width="511.53" height="511.53"></rect>
+            <g id="Group" transform="translate(0.000000, 57.000000)" fill="#C8414B">
+                <rect id="Rectangle" x="0" y="0" width="512" height="55.8628"></rect>
+                <rect id="Rectangle" x="0" y="113.666667" width="512" height="55.8628"></rect>
+                <rect id="Rectangle" x="0" y="227.333333" width="512" height="55.8628"></rect>
+                <rect id="Rectangle" x="0" y="341" width="512" height="55.8628"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

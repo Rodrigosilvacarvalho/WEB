@@ -1,0 +1,455 @@
+img {
+    display: block;
+    width: 100%;
+}
+
+.logo-container {
+    margin: 0 auto;
+
+    max-width: 600px;
+    padding: 10px;
+
+    height: auto;
+    position: relative;
+}
+.cielo{
+  overflow:hidden;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.cielo {
+  position:relative;
+    background-image: linear-gradient(to bottom, rgba(82, 138, 205, 1), rgba(153, 207, 245, 0.3) 90%, rgba(153, 207, 245, 0));
+}
+
+.expand-width {
+    width: 100%;
+}
+
+.aspect {
+    opacity: 0.2;
+}
+
+.wraperobj {
+    position: relative;
+
+    padding-top: 100%;
+}
+
+.layer {
+    display: block;
+    width: 100%;
+}
+
+.obj {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+}
+
+.obj.tela {
+
+    background-image: url(../images/tela2.png);
+}
+
+.obj.stripsh {
+    background-size: 80%;
+    background-image: url(../images/strip_shadow.png);
+}
+
+.obj.strip {
+    background-size: 80%;
+    background-image: url(../images/strip_proporcion.svg);
+}
+
+.obj.nube1sh {
+    background-size: 23%;
+    background-position: 70% 25%;
+    background-image: url(../images/nube1_sh.png);
+}
+
+.obj.nube1 {
+    background-size: 18%;
+    background-position: 70% 25%;
+    background-image: url(../images/nube1.svg);
+}
+
+.obj.nube2sh {
+    background-size: 18%;
+    background-position: 66% 52%;
+    background-image: url(../images/nube2_sh.png);
+}
+
+.obj.nube2 {
+    background-size: 15%;
+    background-position: 66% 52%;
+    background-image: url(../images/nube2.svg);
+}
+.parapente{
+  width: 60px;
+  will-change: transform;
+-webkit-animation: parapenteanim 450s infinite cubic-bezier(0.8, 0.5, 0.3, 1);
+animation: parapenteanim 45s infinite cubic-bezier(0.8, 0.5, 0.3, 1);
+position: absolute;
+bottom:0px;
+left: 0px;
+  
+}
+.parapente .piloto{
+
+-webkit-animation: parapentey 10s infinite ;
+animation: parapentey 10s infinite;
+}
+
+.parapente2{
+  width: 57px;
+  will-change: transform;
+-webkit-animation: parapenteanim 60s infinite cubic-bezier(0.7, 0.2, 0.4, 1);
+animation: parapenteanim 60s infinite cubic-bezier(0.7, 0.2, 0.4, 1);
+position: absolute;
+
+  
+}
+.parapente2 .piloto{
+
+-webkit-animation: parapentey 15s infinite ;
+animation: parapentey 15s infinite;
+}
+.parapente3{
+  width: 40px;
+  will-change: transform;
+-webkit-animation: lefttoright-m 70s infinite cubic-bezier(0.7, 0.2, 0.4, 4);
+animation: lefttoright-m 70s infinite cubic-bezier(0.7, 0.2, 0.4, 0.4);
+position: absolute;
+
+  
+}
+.parapente3 .piloto{
+
+-webkit-animation: parapentey 20s infinite ;
+animation: parapentey 20s infinite;
+}
+
+.parapente4{
+  width: 60px;
+  will-change: transform;
+-webkit-animation: lefttoright 50s infinite cubic-bezier(0.7, 0.2, 0.4, 4);
+animation: lefttoright 50s infinite cubic-bezier(0.7, 0.2, 0.4, 0.4);
+position: absolute;
+
+  
+}
+.parapente4 .piloto{
+
+-webkit-animation: parapentey 15s infinite ;
+animation: parapentey 15s infinite;
+}
+
+.parapente5{
+  width: 70px;
+  will-change: transform;
+  -webkit-animation: lefttoright-3 60s infinite cubic-bezier(0.8, 0.2, 0.4, 4);
+  animation: lefttoright-3 60s infinite cubic-bezier(0.8, 0.2, 0.4, 0.4);
+  position: absolute;
+
+  
+}
+.parapente5 .piloto{
+
+-webkit-animation: parapentey 20s infinite ;
+animation: parapentey 20s infinite;
+}
+
+
+.paramotor{
+  width: 60px;
+  will-change: transform;
+-webkit-animation: lefttoright-2 40s infinite cubic-bezier(1,1 , 0, 0);
+animation: lefttoright-2 40s infinite cubic-bezier(1,1 , 0, 0);
+position: absolute;
+
+  
+}
+
+
+@media only screen and (max-width: 767px) {
+  .parapente4{
+      width: 45px;
+      -webkit-animation-duration: 25s;
+      animation-duration: 25s;    
+    }
+    .paramotor{
+        width: 50px;
+        -webkit-animation-diration: 30s;
+        animation-duration: 30s;
+    }
+    .parapente5{
+      width: 50px;
+      -webkit-animation-duration:30s;
+      animation-duration:30s;
+
+      
+    }
+}
+
+@keyframes parapentey{
+  50% {
+    animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+    transform: translateY(-100%);
+  }
+}
+@keyframes parapenteanim {
+  from{
+    left: 100%;
+    top:10%;
+    transform: scale(0.5);
+
+  }
+  to{
+   left:-150px;
+   top:50%;
+   transform: scale(1);
+  }
+}
+@keyframes lefttoright {
+  from{
+
+    left: -10%;
+    top:20%;
+    transform: scale(0.6);
+
+  }
+  to{
+   left:100%;
+   top:30%;
+   transform: scale(1);
+  }
+}
+@keyframes lefttoright-m {
+  from{
+
+    left: -10%;
+    top:50%;
+    transform: scale(0.7);
+
+  }
+  to{
+   left:100%;
+   top:70%;
+   transform: scale(1);
+  }
+}
+@keyframes lefttoright-2 {
+  from{
+
+    left: -10%;
+    top:60%;
+    transform: scale(1);
+
+  }
+  to{
+   left:250%;
+   top:60%;
+   transform: scale(0.8);
+  }
+}
+@keyframes lefttoright-3 {
+  from{
+
+    left: -10%;
+    top:30%;
+    transform: scale(1);
+
+  }
+  to{
+   left:100%;
+   top:10%;
+   transform: scale(0.8);
+  }
+}
+
+
+.clouds{
+  position:absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/cloud.png);
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+
+  animation: cloudsanim 200s linear infinite;
+  -webkit-animation: cloudsanim 200s linear infinite;
+  -moz-animation: cloudsanim 200s linear infinite;
+}
+.swingnube-1{
+   -webkit-animation: xAxis 8s infinite ease-in;
+    -moz-animation: xAxis 8s infinite ease-in;
+    animation: xAxis 8s infinite ease-in;
+}
+.swingnube-1 .obj{
+   -webkit-animation: yAxis 10s infinite alternate cubic-bezier(0.455, 0.6, 0.515, 0.955);
+    -moz-animation: yAxis 10s infinite alternate cubic-bezier(0.455, 0.6, 0.515, 0.955);
+    animation: yAxis 10s infinite alternate cubic-bezier(0.455, 0.6, 0.515, 0.955);
+}
+.swingnube-2{
+   -webkit-animation: xAxis 10s infinite reverse cubic-bezier(0.455, 0.6, 0.515, 0.955);
+    -moz-animation: xAxis 10s infinite reverse cubic-bezier(0.455, 0.6, 0.515, 0.955);
+    animation: xAxis 10s infinite reverse cubic-bezier(0.455, 0.6, 0.515, 0.955);
+}
+.swingnube-2 .obj{
+   -webkit-animation: yAxis 8s infinite reverse alternate ease;
+    -moz-animation: yAxis 8s infinite reverse alternate ease;
+    animation: yAxis 8s infinite reverse alternate ease;
+}
+
+@keyframes cloudsanim {
+  from{
+    background-position: 0px;
+
+  }
+  to{
+    background-position: 5440px;
+  }
+}
+
+
+@-webkit-keyframes swing {
+    0% {
+        -webkit-transform: translate(10px,4px);
+        -moz-transform: translate(10px,4px);
+        transform: translate(10px,4px);
+    }
+    25% {
+        -webkit-transform: translate(8px,0px);
+        -moz-transform: translate(8px,0px);
+        transform: translate(8px,0px);
+    }
+    50% {
+        -webkit-transform: translate(-5px,-2px);
+        -moz-transform: translate(-5px,-2px);
+        transform: translate(-5px,-2px);
+    }
+    75% {
+        -webkit-transform: translate(-8px,4px);
+        -moz-transform: translate(-8px,4px);
+        transform: translate(-8px,4px);
+    }
+
+    100% {
+        -webkit-transform: translate(-10px,0px);
+        -moz-transform: translate(-10px,0px);
+        transform: translate(-10px,0px);
+    }
+}
+
+@-moz-keyframes swing {
+    0% {
+        -webkit-transform: translate(10px,4px);
+        -moz-transform: translate(10px,4px);
+        transform: translate(10px,4px);
+    }
+    25% {
+        -webkit-transform: translate(8px,0px);
+        -moz-transform: translate(8px,0px);
+        transform: translate(8px,0px);
+    }
+    50% {
+        -webkit-transform: translate(-5px,-2px);
+        -moz-transform: translate(-5px,-2px);
+        transform: translate(-5px,-2px);
+    }
+    75% {
+        -webkit-transform: translate(-8px,4px);
+        -moz-transform: translate(-8px,4px);
+        transform: translate(-8px,4px);
+    }
+
+    100% {
+        -webkit-transform: translate(-10px,0px);
+        -moz-transform: translate(-10px,0px);
+        transform: translate(-10px,0px);
+    }
+}
+
+@-ms-keyframes swing {
+    0% {
+        -webkit-transform: translate(10px,4px);
+        -moz-transform: translate(10px,4px);
+        transform: translate(10px,4px);
+    }
+    25% {
+        -webkit-transform: translate(8px,0px);
+        -moz-transform: translate(8px,0px);
+        transform: translate(8px,0px);
+    }
+    50% {
+        -webkit-transform: translate(-5px,-2px);
+        -moz-transform: translate(-5px,-2px);
+        transform: translate(-5px,-2px);
+    }
+    75% {
+        -webkit-transform: translate(-8px,4px);
+        -moz-transform: translate(-8px,4px);
+        transform: translate(-8px,4px);
+    }
+
+    100% {
+        -webkit-transform: translate(-10px,0px);
+        -moz-transform: translate(-10px,0px);
+        transform: translate(-10px,0px);
+    }
+}
+
+@keyframes swing {
+    0% {
+        -webkit-transform: translate(10px,4px);
+        -moz-transform: translate(10px,4px);
+        transform: translate(10px,4px);
+    }
+    25% {
+        -webkit-transform: translate(8px,0px);
+        -moz-transform: translate(8px,0px);
+        transform: translate(8px,0px);
+    }
+    50% {
+        -webkit-transform: translate(-5px,-2px);
+        -moz-transform: translate(-5px,-2px);
+        transform: translate(-5px,-2px);
+    }
+    75% {
+        -webkit-transform: translate(-8px,4px);
+        -moz-transform: translate(-8px,4px);
+        transform: translate(-8px,4px);
+    }
+
+    100% {
+        -webkit-transform: translate(-10px,0px);
+        -moz-transform: translate(-10px,0px);
+        transform: translate(-10px,0px);
+    }
+}
+@keyframes yAxis {
+  50% {
+
+    transform: translateY(10px);
+  }
+}
+
+@keyframes xAxis {
+  50% {
+
+    transform: translateX(20px);
+  }
+}
